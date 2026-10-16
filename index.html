@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff0f5">
+  <meta name="description" content="Малка дигитална картичка за един специален рожден ден.">
+  <title>Честит рожден ден! 🎂</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sparkles" aria-hidden="true"></div>
+  <main class="card">
+    <div class="top-label">ЗА ЕДИН СПЕЦИАЛЕН ЧОВЕК ✨</div>
+
+    <section class="envelope-scene" id="envelopeScene">
+      <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Отвори картичката">
+        <div class="envelope-back"></div>
+        <div class="letter">
+          <div class="letter-heart">♥</div>
+          <p>Имаш едно<br><strong>специално послание</strong></p>
+        </div>
+        <div class="envelope-front"></div>
+        <div class="envelope-flap"></div>
+        <div class="seal">♥</div>
+      </div>
+      <p class="tap-hint" id="tapHint">Докосни плика, за да го отвориш</p>
+    </section>
+
+    <section class="message" id="message" aria-live="polite" hidden>
+      <div class="cake" aria-hidden="true">🎂</div>
+      <p class="eyebrow">ДНЕС Е ТВОЯТ ДЕН</p>
+      <h1>Честит рожден ден!</h1>
+      <p class="wish">
+        Пожелавам ти дни, пълни с усмивки, смелост да следваш мечтите си
+        и хора, които те карат да се чувстваш обичан/а.
+        Нека хубавите моменти са повече от очакваното, а желанията ти
+        една по една да се превръщат в реалност. 💗
+      </p>
+      <p class="signature">С много обич, <span id="sender">от мен</span> ♡</p>
+      <button class="replay" id="replay">Прочети отново ↻</button>
+    </section>
+
+    <footer>направено с ♥ специално за теб</footer>
+  </main>
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
